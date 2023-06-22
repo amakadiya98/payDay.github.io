@@ -1,0 +1,19 @@
+@font-face {
+    font-family:"PolySans";
+    src: url('../fonts/PolySans_Slim.ttf');
+    font-weight: 300;
+  }
+  @font-face {
+    font-family:"PolySans";
+    src: url('../fonts/PolySans_Neutral.ttf');
+    font-weight: 400;
+  }
+  @font-face {
+    font-family:"PolySans";
+    src: url('../fonts/PolySans_Median.ttf');
+    font-weight: 600;
+  }
+  
+  body{
+    font-family:"PolySans";
+  }

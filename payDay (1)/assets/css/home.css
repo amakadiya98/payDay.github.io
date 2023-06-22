@@ -1,0 +1,811 @@
+body{
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+/* header section */
+.header-section {
+    padding: 12px 60px;
+    width: 100%;
+    background-color: white;
+    position: relative;
+  }
+  .custom-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header-section .custom-container .left-part {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 35px;
+    justify-content: flex-start;
+    flex: 1;
+  }
+  .header-section .custom-container .right-part {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    gap: 35px;
+    justify-content: flex-end;
+  }
+  .header-section .custom-container .left-part .logo-part {
+    display: flex;
+    align-items: center;
+  }
+  .header-section .custom-container .left-part .logo-part img {
+    width: 85px;
+  }
+  .header-section .custom-container .left-part .link-item-part {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+  }
+  .header-section .custom-container .left-part .link-item-part .link-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-section
+    .custom-container
+    .left-part
+    .link-item-part
+    .link-item
+    .dropdown-btn {
+    outline: none;
+    box-shadow: none;
+    border: none;
+    font-family: "PolySans";
+    font-weight: 300;
+    font-size: 15px;
+    color: #262626;
+  }
+  .header-section
+    .custom-container
+    .left-part
+    .link-item-part
+    .link-item
+    .dropdown-toggle::after {
+    color: #25319e;
+  }
+  
+  .apply-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 20px;
+    background: #25319e;
+    border-radius: 15px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: white;
+    border: 1px solid #25319e;
+  }
+  .apply-btn:hover {
+    background-color: white;
+    color: #25319e;
+  }
+  
+  .navbar-expand-lg .navbar-nav .nav-link {
+    color: #262626;
+  }
+
+/* main blick css */
+
+.home-page .main-block {
+    width: 100%;
+    padding-top: 15px;
+  }
+  .main-block .banner-section {
+    width: 100%;
+  }
+  .banner-section .custom-container {
+    padding: 0 60px;
+    display: flex;
+    flex-direction: column;
+  }
+  .banner-section .banner-main {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    align-items: center;
+    /* flex: 1 1 auto; */
+    width: 100%;
+  }
+  .banner-main .left-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    padding: 0px 0px 0px 110px;
+    background: linear-gradient(
+      218.74deg,
+      #d2fff7 -25.56%,
+      #eff1ff 29.27%,
+      #eaeffb 62.64%,
+      #b8d3ed 103.44%
+    );
+    border-radius: 25px 0px 0px 25px;
+  }
+  .banner-main .left-part .heading-text {
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 74px;
+    color: #25319e;
+    text-align: left;
+  }
+  .banner-main .left-part .features {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  .banner-main .left-part .features .feature-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    padding-left: 10px;
+  }
+  .banner-main .left-part .features .feature-item p {
+    margin: 0;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #25319e;
+  }
+  .banner-main .right-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    align-items: flex-start;
+    padding: 80px 40px;
+    gap: 10px;
+    background: #25319e;
+    border-radius: 0px 25px 25px 0px;
+  }
+  .banner-main .right-part .right-part-heading {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+    margin: 0;
+  }
+  .banner-main .right-part .price-selection-part {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35px;
+    width: 100%;
+  }
+  .banner-main .right-part .price-selection-part .select2-container {
+    width: 100% !important;
+    /* padding: 15px 20px; */
+    border-radius: 15px;
+  }
+  .banner-main
+    .right-part
+    .price-selection-part
+    .select2-container--default
+    .select2-selection--single {
+    width: 100% !important;
+    padding: 15px 20px;
+    border-radius: 15px;
+    height: unset;
+  }
+  .banner-main
+    .right-part
+    .price-selection-part
+    .select2-container--default
+    .select2-selection--single
+    .select2-selection__arrow {
+    height: auto;
+    position: absolute;
+    top: 50%;
+    right: 7%;
+    width: 35px;
+  }
+  .banner-main
+    .right-part
+    .price-selection-part
+    .select2-container
+    .select2-selection--single
+    .select2-selection__rendered {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+    color: #262626;
+  }
+  
+  .banner-main
+    .right-part
+    .price-selection-part
+    .select2-container--default
+    .select2-selection--single
+    .select2-selection__arrow
+    b {
+    border-color: #262626 transparent transparent transparent;
+    border-width: 10px 7px 0 7px;
+  }
+  .banner-main .right-part .content .apply-btn {
+    width: 100%;
+    background-color: #d7fceb;
+    color: #262626;
+    padding: 15px 20px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #25319e;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  .banner-main .right-part .content .ad-text {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  .banner-main .right-part .content .ad-text p {
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    margin-bottom: 0;
+  }
+  .banner-main .right-part .content .ad-text p span {
+    margin-bottom: 0;
+    color: #afb6f4;
+  }
+  .main-block .banner-section .custom-container .loan-types-main {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #f6f8fe;
+    border-radius: 25px;
+    padding: 50px;
+    margin-top: 40px;
+  }
+
+/* loan card css */
+
+.loan-types-main .loan-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px 20px 25px 30px;
+    gap: 30px;
+    background: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+  }
+  .loan-types-main .loan-card .description-part {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .loan-types-main .loan-card .description-part p {
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 30px;
+    letter-spacing: -0.02em;
+    color: #25319e;
+  }
+  .loan-types-main .loan-card .description-part img {
+    width: 24px;
+    height: 18px;
+  }
+
+/* payDay online css */
+
+.main-block .payday-online-section {
+    width: 100%;
+    margin-top: 120px;
+  }
+  .payday-online-section .section-content {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 80px;
+  }
+  .payday-online-section .section-content .top-text-part {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: flex-start;
+    text-align: left;
+  }
+  .payday-online-section .section-content .top-text-part .heading {
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 100%;
+    color: #000000;
+    margin: 0;
+  }
+  .payday-online-section .section-content .top-text-part p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 150%;
+    color: #262626;
+    max-width: 85%;
+  }
+  .payday-online-section .section-content .middle-image-part {
+    width: 100%;
+  }
+  .payday-online-section .section-content .middle-image-part img {
+    width: 100%;
+  }
+  .payday-online-section .section-content .bottom-provider-part {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .payday-online-section .section-content .bottom-provider-part h5 {
+    margin: 0;
+    font-family: "Inter Tight";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #858586;
+    opacity: 0.7;
+    text-align: center;
+  }
+  .payday-online-section .section-content .bottom-provider-part .provider-images {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 80%;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+/* what are payDay section */
+
+.main-block .what-are-payday-section {
+    margin-top: 120px;
+    width: 100;
+    background: linear-gradient(
+      218.74deg,
+      #d2fff7 -25.56%,
+      #eff1ff 29.27%,
+      #eaeffb 62.64%,
+      #b8d3ed 103.44%
+    );
+    padding: 120px 0;
+  }
+  .main-block .what-are-payday-section .content-div {
+    display: flex;
+    width: 90%;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .what-are-payday-section .content-div .heading-part {
+    display: flex;
+    flex: 1;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 110%;
+    color: #25319e;
+  }
+  .what-are-payday-section .content-div .text-part {
+    display: flex;
+    flex: 1;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 150%;
+    color: #25319e;
+  }
+
+/* howTo css */
+.howTo{
+    margin-top: 140px;
+}
+
+.howTo .content .first-part .image-part{
+    width: 80%;
+}
+
+.howTo .content .first-part .text-part{
+    max-width: 60%;
+    padding-top: 10px;
+}
+
+.howTo .content .text-part .head{
+    font-style: normal;
+    font-weight: 40;
+    font-size: 42px;
+    line-height: 48.3px;
+    color: #262626;
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 0;
+}
+
+.howTo .content .first-part .text-part ol li{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 24px;
+    color: #474953;
+    margin-top: 20px;
+}
+
+.howTo .content .first-part .text-part .exampleTxt{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    color: #4E5BCA;
+    padding-top: 70px;
+}
+
+.howTo .content .first-part .text-part .exampleTxt span{
+    font-weight: 600;
+}
+
+.howTo .content .second-part{
+    margin-top: 120px;
+}
+
+.howTo .content .second-part .image-part{
+    width: 80%;
+}
+
+.howTo .content .second-part .text-part{
+    max-width: 65%;
+}
+
+.howTo .content .second-part .text-part .text{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 24px;
+    color: #474953;
+}
+
+/* steps section css */
+
+.steps{
+    margin-top: 140px;
+    padding-top: 120px;
+    background-color: #F9F9F9;
+    padding-bottom: 140px;
+}
+
+.steps .content .top{
+    text-align: center;
+    
+}
+
+.steps .content .top .head{
+    width: 60%;
+    margin: 0 auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 62px;
+    color: #000000;
+    padding: 0;
+}
+
+.steps .content .top .head-text{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    width: 65%;
+    margin: 0 auto;
+}
+
+.steps .content .step-list{
+    display: flex;
+    gap: 120px;
+    margin-top: 40px;
+}
+
+.steps .content .step-list .list .step{
+    padding-top: 40px;
+}
+
+.steps .content .step-list .list .step .title{
+    color:#262626;
+    font-size: 26px;
+    line-height: 30px;
+    letter-spacing: -0.52px;
+    margin: 0;
+    padding: 0;
+}
+
+.steps .content .step-list .list .step .detail{
+    color: #474953;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 300;
+    margin: 20px 0 0 24px;
+}
+
+/* requirement section css */
+
+.main-block .requirement-section {
+    width: 100%;
+    background: linear-gradient(
+      218.74deg,
+      #d2fff7 -25.56%,
+      #eff1ff 29.27%,
+      #eaeffb 62.64%,
+      #b8d3ed 103.44%
+    );
+    padding: 140px 0;
+  }
+  .main-block .requirement-section .content-main {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .main-block .requirement-section .left-text-part {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 30px;
+    padding-right: 35px;
+  }
+  .main-block .requirement-section .left-text-part h2 {
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 110%;
+    color: #25319e;
+    margin: 0;
+    width: 75%;
+  }
+  .main-block .requirement-section .left-text-part p {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 150%;
+    color: #25319e;
+    width: 95%;
+  }
+  .main-block .requirement-section .right-card-part {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  .requirement-section .right-card-part .steps-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px;
+    gap: 20px;
+    background: #ffffff;
+    border-radius: 25px;
+    width: 100%;
+  }
+  .requirement-section .right-card-part .steps-card .top-heading {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 70%;
+  }
+  .requirement-section .right-card-part .steps-card .top-heading img {
+    width: 26px;
+    height: 26px;
+  }
+  .requirement-section .right-card-part .steps-card .top-heading h6 {
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 115%;
+    color: #000000;
+    letter-spacing: -0.02em;
+    margin: 0;
+  }
+  .requirement-section .right-card-part .steps-card .bottom-content {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .requirement-section .right-card-part .steps-card .bottom-content p {
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 140%;
+    color: #474953;
+    text-align: left;
+  }
+
+/* resson section css */
+
+.reason{
+    padding: 120px 0;
+}
+
+.reason .content .top{
+    text-align: center;
+}
+
+.reason .content .top .head{
+    color: #000;
+    font-size: 42px;
+    line-height: 48px;
+    margin: 0;
+    padding: 0;
+}
+
+.reason .content .top .text{
+    color: #262626;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.reason .content .card-part{
+    margin-top: 50px;
+}
+
+.reason .content .card-part .grid{
+    display: grid;
+}
+
+.reason .content .card-part .box{
+    padding: 50px 35px;
+    border-radius: 25px;
+    background: #FFF5F5;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+    margin-bottom: 15px;
+}
+
+.reason .content .card-part .box .text-part{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.reason .content .card-part .box .text-part .title{
+    color:#000;
+    font-size: 26px;
+    line-height: 32px;
+    letter-spacing: -0.52px;
+    margin: 0;
+}
+
+.reason .content .card-part .box .text-part .detail{
+    color: #474953;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 24px;
+    margin: 0;
+}
+
+.loan-online-section .content .top .head{
+    color:#000;
+    text-align: center;
+    font-size: 56px;
+    line-height: 64px;
+}
+
+/* pros-cons section css */
+
+.pros-cons{
+    padding: 140px 0;
+}
+
+.pros-cons .content .top .head{
+    color: #000;
+    font-size: 42px;
+    line-height: 48px;
+    margin: 0;
+    padding: 0;
+}
+
+.pros-cons .content .top .text{
+    color: #262626;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+    width: 60%;
+}
+
+.pros-cons .content .legend{
+    color: #000;
+    font-size: 26px;
+    line-height: 32px;
+    letter-spacing: -0.52px;
+    margin-bottom: 15px;
+}
+
+.pros-cons .content .box{
+    padding: 45px 50px;
+    border-radius: 25px;
+    background: #F9F9F9;
+}
+
+.pros-cons .content .pros .box .adv:first-child{
+    margin-top: 0;
+}
+
+.pros-cons .content .pros .box .adv{
+    margin-top: 35px;
+}
+
+.pros-cons .content .pros .box .adv .title{
+    color: #108B5F;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    margin: 0;
+    padding: 0;
+}
+
+.pros-cons .content .pros .box .adv .detail{
+    color: #262626;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 22px;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.pros-cons .content .cons{
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.pros-cons .content .cons .box .dis .title{
+    color: #F41C5D;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    margin: 0;
+    padding: 0;
+}
+
+.pros-cons .content .cons .box .dis .detail{
+    color: #262626;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 22px;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+}
