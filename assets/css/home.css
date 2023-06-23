@@ -22,6 +22,7 @@ body {
 }
 
 .loan-types-main .card-link:hover .loan-card{
+    transition-duration: 0.5s;
     box-shadow: rgba(37, 50, 165, 0.32) 3px 1px 17px;
 }
 
@@ -515,7 +516,6 @@ body {
 }
 
 .loan-online-section .content .list {
-    margin-top: 80px;
     max-width: 80%;
     margin: 80px auto 0;
 }
@@ -679,11 +679,13 @@ body {
     line-height: 22px;
 }
 
-
+@media screen and (max-width: 1366px) {
+    .loan-online-section .content .top .head{
+        width: 75%;
+    }
+}
 
 @media screen and (max-width:992px) {
-
-    
 
     .loan-types-main .loan-card{
         margin-bottom: 20px;
@@ -748,19 +750,27 @@ body {
     .loan-online-section .content .top .head{
         width: 100%;
     }
+
     .loan-online-section .content .top .text{
+        width: 100%;
+    }
+
+    .loan-online-section .content .list .box .text-part{
         width: 100%;
     }
 }
 @media screen and (max-width: 991px) {
 
-    
     .howTo .content .second-part{
         margin-top: 80px;
     }
 
     .reason .content .top .text{
         width: 100%;
+    }
+
+    .loan-online-section .content .list{
+        max-width: 100%;
     }
 
     .pros-cons .content .top .head{
@@ -779,6 +789,36 @@ body {
 
 }
 
+@media screen and (max-width: 767px) {
+    .loan-online-section .content .list .box .gap{
+        gap: 20px;
+    }
+
+    .payday-online-section .section-content .top-text-part .heading{
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    .howTo .content .text-part .head{
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    .steps .content .top .head{
+        font-size: 42px;
+        line-height: 49px;
+    }
+
+    .pros-cons .content .cons .box .dis.gap{
+        margin-top: 30px;
+    }
+
+    .loan-online-section .content .top .head{
+        font-size: 42px;
+        line-height: 49px;
+    }
+}
+
 @media screen and (max-width: 580px) {
 
     .payday-online-section .section-content .top-text-part .heading{
@@ -793,6 +833,7 @@ body {
     .payday-online-section .section-content .bottom-provider-part .provider-images{
         flex-wrap: wrap;
         justify-content: space-around;
+        gap: 20px;
     }
 
     .what-are-payday-section .content-div .heading-part{

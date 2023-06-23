@@ -1,8 +1,8 @@
-.team-section{
+.team-section {
     padding: 100px 0 120px 0;
 }
 
-.team-section .content .header .head{
+.team-section .content .header .head {
     color: #262626;
     font-size: 72px;
     line-height: 79px;
@@ -10,7 +10,7 @@
     padding: 0;
 }
 
-.team-section .content .header .text{
+.team-section .content .header .text {
     color: #474953;
     font-size: 20px;
     font-weight: 300;
@@ -19,19 +19,24 @@
     padding: 0;
 }
 
-.team-section .content .profile-part .grid{
+.team-section .content .profile-part .grid {
     display: grid;
 }
 
-.team-section .content .profile-part .profile{
+.team-section .content .profile-part .grid .profile .box:hover .img-part img{
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+}
+
+.team-section .content .profile-part .profile {
     margin-top: 60px;
 }
 
-.team-section .content .profile-part .profile .text-part{
+.team-section .content .profile-part .profile .text-part {
     margin-top: 20px;
 }
 
-.team-section .content .profile-part .profile .text-part .name{
+.team-section .content .profile-part .profile .text-part .name {
     color: #000;
     font-size: 28px;
     line-height: 32px;
@@ -40,7 +45,7 @@
     padding: 0;
 }
 
-.team-section .content .profile-part .profile .text-part .title{
+.team-section .content .profile-part .profile .text-part .title {
     color: var(--grey-100, #474953);
     font-size: 13px;
     line-height: 15px;
@@ -51,17 +56,22 @@
     margin-top: 10px;
 }
 
-.team-section .content .profile-part .profile .link-part{
+.team-section .content .profile-part .profile .link-part {
     margin-top: 25px;
 }
 
-.team-section .content .profile-part .profile .link-part .link{
+.team-section .content .profile-part .profile .link-part .link {
     text-decoration: none;
     margin-right: 10px;
 }
 
+.team-section .content .profile-part .profile .link-part .link:hover img{
+    transform: scale(1.5);
+    transition-duration: 0.5s;
+}
+
 @media screen and (max-width:992px) {
-    .team-section .content .header .head{
+    .team-section .content .header .head {
         font-size: 60px;
         line-height: 69px;
     }
@@ -69,15 +79,17 @@
 }
 
 @media screen and (max-width:768px) {
-    .team-section .content .header .head{
+    .team-section .content .header .head {
         font-size: 42px;
         line-height: 48px;
     }
-    .team-section .content .header .text{
+
+    .team-section .content .header .text {
         font-size: 17px;
         line-height: 25px;
     }
-    .team-section .content .profile-part .profile .text-part .name{
+
+    .team-section .content .profile-part .profile .text-part .name {
         font-size: 22px;
         line-height: 25px;
         letter-spacing: -0.44px;
@@ -85,12 +97,13 @@
 }
 
 @media screen and (max-width : 767px) {
-    .team-section .content .header .head{
+    .team-section .content .header .head {
         font-size: 36px;
         line-height: 44px;
         letter-spacing: -0.72px;
     }
-    .team-section .content .profile-part .profile .text-part .name{
+
+    .team-section .content .profile-part .profile .text-part .name {
         font-size: 20px;
         line-height: 23px;
     }

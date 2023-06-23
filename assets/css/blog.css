@@ -234,7 +234,7 @@
 }
 .blog-post-section .post-content .post-details {
   display: flex;
-  width: 80%;
+  width: 67%;
   flex-direction: column;
   align-items: flex-start;
   gap: 55px;
@@ -286,6 +286,13 @@
   width: 100%;
   padding-left: 10px;
 }
+/* hover */
+
+.bottom-content-part .custom-row .box:hover .blog-card .blog-img{
+  transform: scale(1.1);
+  transition-duration: 0.5s;
+}
+
 /* responsive css start */
 
 @media screen and (max-width: 1200px) {
@@ -307,6 +314,7 @@
     font-size: 60px;
     line-height: 105%;
   }
+  
 }
 
 @media screen and (max-width: 768px) {

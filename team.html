@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/common.css" />
     <link rel="stylesheet" href="./assets/css/team.css" />
 </head>
+
 <body>
 
     <!-- header -->
@@ -140,7 +143,8 @@
             <div class="custom-container">
                 <div class="banner-main">
                     <div class="left-part">
-                        <h1 class="heading-text">Payday Loans <br />at Payday Depot</h1>
+                        <h1 class="heading-text d-lg-flex d-lg-block d-none">Payday Loans at Payday Depot</h1>
+                        <h1 class="heading-text d-lg-flex d-block d-lg-none">Your Financial Well-being Comes First</h1>
                         <div class="features">
                             <div class="feature-item">
                                 <img src="./assets/images/rightIcon.png" alt="right" />
@@ -198,209 +202,225 @@
                 <div class="content">
                     <div class="header">
                         <h2 class="head">
-                            Editorial Team 
+                            Editorial Team
                         </h2>
-    
+
                         <p class="text">
                             Our experts empowering people to lead better lives with good understanding of finance.
                         </p>
                     </div>
                     <div class="profile-part">
                         <div class="row">
-    
+
                             <div class="col-6 col-sm-4 col-md-4 col-lg-3 grid">
                                 <div class="profile">
-                                    <div class="img-part">
-                                        <img src="./assets/images/prof-1.png" alt="profile image">
-                                    </div>
-                                    <div class="text-part">
-                                        <h3 class="name">
-                                            Corey Korsgaard
-                                        </h3>
-                                        <p class="title">
-                                            Editor-in-Chief
-                                        </p>
-                                    </div>
-                                    <div class="link-part">
-                                        <a href="#" class="link">
-                                            <img src="./assets/images/prof-facebook.svg" alt="facebook">
-                                        </a>
-                                        <a href="#" class="link">
-                                            <img src="./assets/images/prof-twitter.svg" alt="twitter">
-                                        </a>
-                                        <a href="#" class="link">
-                                            <img src="./assets/images/prof-linkedin.svg" alt="linckedin">
-                                        </a>
-                                    </div>
+                                    <a href="#" style="text-decoration: none;" class="box">
+                                        <div class="img-part">
+                                            <img src="./assets/images/prof-1.png" alt="profile image" />
+                                        </div>
+                                        <div class="text-part">
+                                            <h3 class="name">
+                                                Corey Korsgaard
+                                            </h3>
+                                            <p class="title">
+                                                Editor-in-Chief
+                                            </p>
+                                        </div>
+                                        <div class="link-part">
+                                            <a href="#" class="link">
+                                                <img src="./assets/images/prof-facebook.svg" alt="facebook" />
+                                            </a>
+                                            <a href="#" class="link">
+                                                <img src="./assets/images/prof-twitter.svg" alt="twitter" />
+                                            </a>
+                                            <a href="#" class="link">
+                                                <img src="./assets/images/prof-linkedin.svg" alt="linckedin" />
+                                            </a>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
-    
+
                             <div class="col-6 col-sm-4 col-md-4 col-lg-3 grid">
                                 <div class="profile">
-                                    <div class="img-part">
-                                        <img src="./assets/images/prof-2.png" alt="profile image">
-                                    </div>
-                                    <div class="text-part">
-                                        <h3 class="name">
-                                            Allison Calzoni
-                                        </h3>
-                                        <p class="title">
-                                            Editor
-                                        </p>
-                                    </div>
-                                    <div class="link-part">
-                                        <a href="#" class="link">
-                                            <img src="./assets/images/prof-facebook.svg" alt="facebook">
-                                        </a>
-                                    </div>
+                                    <a href="#" style="text-decoration: none;" class="box">
+                                        <div class="img-part">
+                                            <img src="./assets/images/prof-2.png" alt="profile image">
+                                        </div>
+                                        <div class="text-part">
+                                            <h3 class="name">
+                                                Allison Calzoni
+                                            </h3>
+                                            <p class="title">
+                                                Editor
+                                            </p>
+                                        </div>
+                                        <div class="link-part">
+                                            <a href="#" class="link">
+                                                <img src="./assets/images/prof-facebook.svg" alt="facebook">
+                                            </a>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
-    
+
                             <div class="col-6 col-sm-4 col-md-4 col-lg-3 grid">
                                 <div class="profile">
-                                    <div class="img-part">
-                                        <img src="./assets/images/prof-3.png" alt="profile image">
-                                    </div>
-                                    <div class="text-part">
-                                        <h3 class="name">
-                                            Nolan Saris
-                                        </h3>
-                                        <p class="title">
-                                            Editor
-                                        </p>
-                                    </div>
-                                    <div class="link-part">
-                                        <a href="#" class="link">
-                                            <img src="./assets/images/prof-twitter.svg" alt="twitter">
-                                        </a>
-                                        <a href="#" class="link">
-                                            <img src="./assets/images/prof-linkedin.svg" alt="linckedin">
-                                        </a>
-                                    </div>
+                                    <a href="#" style="text-decoration: none;" class="box">
+                                        <div class="img-part">
+                                            <img src="./assets/images/prof-3.png" alt="profile image">
+                                        </div>
+                                        <div class="text-part">
+                                            <h3 class="name">
+                                                Nolan Saris
+                                            </h3>
+                                            <p class="title">
+                                                Editor
+                                            </p>
+                                        </div>
+                                        <div class="link-part">
+                                            <a href="#" class="link">
+                                                <img src="./assets/images/prof-twitter.svg" alt="twitter">
+                                            </a>
+                                            <a href="#" class="link">
+                                                <img src="./assets/images/prof-linkedin.svg" alt="linckedin">
+                                            </a>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
-    
+
                             <div class="col-6 col-sm-4 col-md-4 col-lg-3 grid">
-                                <div class="profile">
-                                    <div class="img-part">
-                                        <img src="./assets/images/prof-4.png" alt="profile image">
+                                <a href="#" style="text-decoration: none;" class="box">
+                                    <div class="profile">
+                                        <div class="img-part">
+                                            <img src="./assets/images/prof-4.png" alt="profile image">
+                                        </div>
+                                        <div class="text-part">
+                                            <h3 class="name">
+                                                Bill Westervelt
+                                            </h3>
+                                            <p class="title">
+                                                Editor
+                                            </p>
+                                        </div>
+                                        <div class="link-part">
+                                            <a href="#" class="link">
+                                                <img src="./assets/images/prof-linkedin.svg" alt="linckedin">
+                                            </a>
+                                        </div>
                                     </div>
-                                    <div class="text-part">
-                                        <h3 class="name">
-                                            Bill Westervelt
-                                        </h3>
-                                        <p class="title">
-                                            Editor
-                                        </p>
-                                    </div>
-                                    <div class="link-part">
-                                        <a href="#" class="link">
-                                            <img src="./assets/images/prof-linkedin.svg" alt="linckedin">
-                                        </a>
-                                    </div>
-                                </div>
+                                </a>
                             </div>
-    
+
                             <div class="col-6 col-sm-4 col-md-4 col-lg-3 grid">
-                                <div class="profile">
-                                    <div class="img-part">
-                                        <img src="./assets/images/prof-5.png" alt="profile image">
+                                <a href="#" style="text-decoration: none;" class="box">
+                                    <div class="profile">
+                                        <div class="img-part">
+                                            <img src="./assets/images/prof-5.png" alt="profile image">
+                                        </div>
+                                        <div class="text-part">
+                                            <h3 class="name">
+                                                Rayna Herwitz
+                                            </h3>
+                                            <p class="title">
+                                                Editor
+                                            </p>
+                                        </div>
+                                        <div class="link-part">
+                                            <a href="#" class="link">
+                                                <img src="./assets/images/prof-facebook.svg" alt="facebook">
+                                            </a>
+                                            <a href="#" class="link">
+                                                <img src="./assets/images/prof-linkedin.svg" alt="linckedin">
+                                            </a>
+                                        </div>
                                     </div>
-                                    <div class="text-part">
-                                        <h3 class="name">
-                                            Rayna Herwitz
-                                        </h3>
-                                        <p class="title">
-                                            Editor
-                                        </p>
-                                    </div>
-                                    <div class="link-part">
-                                        <a href="#" class="link">
-                                            <img src="./assets/images/prof-facebook.svg" alt="facebook">
-                                        </a>
-                                        <a href="#" class="link">
-                                            <img src="./assets/images/prof-linkedin.svg" alt="linckedin">
-                                        </a>
-                                    </div>
-                                </div>
+                                </a>
                             </div>
-    
+
                             <div class="col-6 col-sm-4 col-md-4 col-lg-3 grid">
-                                <div class="profile">
-                                    <div class="img-part">
-                                        <img src="./assets/images/prof-6.png" alt="profile image">
+                                <a href="#" style="text-decoration: none;" class="box">
+                                    <div class="profile">
+                                        <div class="img-part">
+                                            <img src="./assets/images/prof-6.png" alt="profile image">
+                                        </div>
+                                        <div class="text-part">
+                                            <h3 class="name">
+                                                Haylie Rosser
+                                            </h3>
+                                            <p class="title">
+                                                Editor
+                                            </p>
+                                        </div>
+                                        <div class="link-part">
+                                            <a href="#" class="link">
+                                                <img src="./assets/images/prof-facebook.svg" alt="facebook">
+                                            </a>
+                                            <a href="#" class="link">
+                                                <img src="./assets/images/prof-twitter.svg" alt="twitter">
+                                            </a>
+                                            <a href="#" class="link">
+                                                <img src="./assets/images/prof-linkedin.svg" alt="linckedin">
+                                            </a>
+                                        </div>
                                     </div>
-                                    <div class="text-part">
-                                        <h3 class="name">
-                                            Haylie Rosser
-                                        </h3>
-                                        <p class="title">
-                                            Editor
-                                        </p>
-                                    </div>
-                                    <div class="link-part">
-                                        <a href="#" class="link">
-                                            <img src="./assets/images/prof-facebook.svg" alt="facebook">
-                                        </a>
-                                        <a href="#" class="link">
-                                            <img src="./assets/images/prof-twitter.svg" alt="twitter">
-                                        </a>
-                                        <a href="#" class="link">
-                                            <img src="./assets/images/prof-linkedin.svg" alt="linckedin">
-                                        </a>
-                                    </div>
-                                </div>
+                                </a>
                             </div>
-    
+
                             <div class="col-6 col-sm-4 col-md-4 col-lg-3 grid">
-                                <div class="profile">
-                                    <div class="img-part">
-                                        <img src="./assets/images/prof-7.png" alt="profile image">
+                                <a href="#" style="text-decoration: none;" class="box">
+                                    <div class="profile">
+                                        <div class="img-part">
+                                            <img src="./assets/images/prof-7.png" alt="profile image">
+                                        </div>
+                                        <div class="text-part">
+                                            <h3 class="name">
+                                                Martin Geidt
+                                            </h3>
+                                            <p class="title">
+                                                Editor
+                                            </p>
+                                        </div>
+                                        <div class="link-part">
+                                            <a href="#" class="link">
+                                                <img src="./assets/images/prof-facebook.svg" alt="facebook">
+                                            </a>
+                                            <a href="#" class="link">
+                                                <img src="./assets/images/prof-twitter.svg" alt="twitter">
+                                            </a>
+                                            <a href="#" class="link">
+                                                <img src="./assets/images/prof-linkedin.svg" alt="linckedin">
+                                            </a>
+                                        </div>
                                     </div>
-                                    <div class="text-part">
-                                        <h3 class="name">
-                                            Martin Geidt
-                                        </h3>
-                                        <p class="title">
-                                            Editor
-                                        </p>
-                                    </div>
-                                    <div class="link-part">
-                                        <a href="#" class="link">
-                                            <img src="./assets/images/prof-facebook.svg" alt="facebook">
-                                        </a>
-                                        <a href="#" class="link">
-                                            <img src="./assets/images/prof-twitter.svg" alt="twitter">
-                                        </a>
-                                        <a href="#" class="link">
-                                            <img src="./assets/images/prof-linkedin.svg" alt="linckedin">
-                                        </a>
-                                    </div>
-                                </div>
+                                </a>
                             </div>
-    
+
                             <div class="col-6 col-sm-4 col-md-4 col-lg-3 grid">
-                                <div class="profile">
-                                    <div class="img-part">
-                                        <img src="./assets/images/prof-8.png" alt="profile image">
+                                <a href="#" style="text-decoration: none;" class="box">
+                                    <div class="profile">
+                                        <div class="img-part">
+                                            <img src="./assets/images/prof-8.png" alt="profile image">
+                                        </div>
+                                        <div class="text-part">
+                                            <h3 class="name">
+                                                Cristofer Madsen
+                                            </h3>
+                                            <p class="title">
+                                                Editor
+                                            </p>
+                                        </div>
+                                        <div class="link-part">
+                                            <a href="#" class="link">
+                                                <img src="./assets/images/prof-facebook.svg" alt="facebook">
+                                            </a>
+                                            <a href="#" class="link">
+                                                <img src="./assets/images/prof-twitter.svg" alt="twitter">
+                                            </a>
+                                        </div>
                                     </div>
-                                    <div class="text-part">
-                                        <h3 class="name">
-                                            Cristofer Madsen
-                                        </h3>
-                                        <p class="title">
-                                            Editor
-                                        </p>
-                                    </div>
-                                    <div class="link-part">
-                                        <a href="#" class="link">
-                                            <img src="./assets/images/prof-facebook.svg" alt="facebook">
-                                        </a>
-                                        <a href="#" class="link">
-                                            <img src="./assets/images/prof-twitter.svg" alt="twitter">
-                                        </a>
-                                    </div>
-                                </div>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -529,4 +549,15 @@
         </div>
     </footer>
 </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".custom-priceSelect").select2({
+                minimumResultsForSearch: Infinity,
+            });
+        });
+    </script>
 </html>

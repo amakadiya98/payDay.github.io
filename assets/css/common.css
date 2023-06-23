@@ -84,8 +84,8 @@
 .header-section .custom-container .left-part .link-item-part .link-item .dropdown-btn:hover {
   color: #25319E;
   font-size: 15px;
-  font-weight: 600;
   line-height: 19px;
+  transition-duration: 0.5s;
 }
 
 .header-section .custom-container .left-part .link-item-part .link-item .dropdown-toggle::after {
@@ -109,6 +109,7 @@
 .apply-btn:hover {
   background-color: white;
   color: #25319e;
+  transition-duration: 0.5s;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -117,6 +118,7 @@
 
 .navbar-expand-lg .navbar-nav .nav-link:hover{
   color: #25319e;
+  transition-duration: 0.5s;
 }
 
 .main-block .banner-section {
@@ -269,6 +271,7 @@
   background-color: #25319E;
   border: 1px solid #d7fceb;
   color: #d7fceb;
+  transition-duration: 0.5s;
 }
 
 .banner-main .right-part .content .ad-text {
@@ -326,17 +329,28 @@
   font-weight: 600;
   line-height: 19px;
   text-decoration: none;
+  border: 1px solid transparent;
+}
+
+.footer-section .content .links-part .link:hover{
+  border-bottom: 1px solid white;
+  transition-duration: 0.5s;
 }
 
 .footer-section .content .copyright {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px;
+  padding-top: 30px;
 }
 
 .footer-section .content .copyright .social-media a{
   text-decoration: none;
+}
+
+.footer-section .content .copyright .social-media a:hover img{
+  transform: scale(1.5);
+  transition-duration: 0.5s;
 }
 
 .footer-section .content .copyright .text-part .text {
@@ -387,6 +401,10 @@
   .banner-section .banner-main{
     grid-template-columns: 66% 34%;
   }
+
+  .banner-main .left-part .features{
+    display: none;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -431,7 +449,7 @@
 
 @media screen and (max-width: 767px) {
   .footer-section .content .contact{
-    padding-top: 20px;
+    padding: 20px 0 0;
     justify-content: space-between;
   }
 
@@ -441,10 +459,16 @@
 
   .footer-section .content .contact .text{
     display: block;
+    width: 25%;
   }
 }
 
 @media screen and (max-width: 580px) {
+
+  .header-section .custom-container .left-part .link-item-part{
+    display: none;
+  }
+
   .banner-section .banner-main{
     grid-template-columns: 0% 100%;
   }
@@ -458,5 +482,10 @@
       padding: 20px;
   }
 
-  
+}
+
+@media screen and (max-width: 425px) {
+  .banner-section .custom-container{
+    padding: 0 20px;
+  }
 }
