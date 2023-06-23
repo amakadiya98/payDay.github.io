@@ -4,95 +4,7 @@ body {
     margin: 0;
 }
 
-/* header section */
-.header-section {
-    padding: 12px 60px;
-    width: 100%;
-    background-color: white;
-    position: relative;
-}
 
-.custom-container {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header-section .custom-container .left-part {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    gap: 35px;
-    justify-content: flex-start;
-    flex: 1;
-}
-
-.header-section .custom-container .right-part {
-    display: flex;
-    align-items: center;
-    flex: 1;
-    gap: 35px;
-    justify-content: flex-end;
-}
-
-.header-section .custom-container .left-part .logo-part {
-    display: flex;
-    align-items: center;
-}
-
-.header-section .custom-container .left-part .logo-part img {
-    width: 85px;
-}
-
-.header-section .custom-container .left-part .link-item-part {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 15px;
-}
-
-.header-section .custom-container .left-part .link-item-part .link-item {
-    display: flex;
-    align-items: center;
-}
-
-.header-section .custom-container .left-part .link-item-part .link-item .dropdown-btn {
-    outline: none;
-    box-shadow: none;
-    border: none;
-    font-family: "PolySans";
-    font-weight: 300;
-    font-size: 15px;
-    color: #262626;
-}
-
-.header-section .custom-container .left-part .link-item-part .link-item .dropdown-toggle::after {
-    color: #25319e;
-}
-
-.apply-btn {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    padding: 15px 20px;
-    background: #25319e;
-    border-radius: 15px;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 18px;
-    color: white;
-    border: 1px solid #25319e;
-}
-
-.apply-btn:hover {
-    background-color: white;
-    color: #25319e;
-}
-
-.navbar-expand-lg .navbar-nav .nav-link {
-    color: #262626;
-}
 
 /* main blick css */
 
@@ -101,191 +13,17 @@ body {
     padding-top: 15px;
 }
 
-.main-block .banner-section {
-    width: 100%;
-}
 
-.banner-section .custom-container {
-    padding: 0 60px;
-    display: flex;
-    flex-direction: column;
-}
-
-.banner-section .banner-main {
-    display: grid;
-    grid-template-columns: 75% 25%;
-    align-items: center;
-    /* flex: 1 1 auto; */
-    width: 100%;
-}
-
-.banner-main .left-part {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    width: 100%;
-    height: 100%;
-    padding: 0px 0px 0px 110px;
-    background: linear-gradient(218.74deg,
-            #d2fff7 -25.56%,
-            #eff1ff 29.27%,
-            #eaeffb 62.64%,
-            #b8d3ed 103.44%);
-    border-radius: 25px 0px 0px 25px;
-}
-
-.banner-main .left-part .heading-text {
-    font-weight: 400;
-    font-size: 72px;
-    line-height: 74px;
-    color: #25319e;
-    text-align: left;
-}
-
-.banner-main .left-part .features {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    align-items: flex-start;
-    justify-content: center;
-    margin-top: 15px;
-}
-
-.banner-main .left-part .features .feature-item {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 15px;
-    padding-left: 10px;
-}
-
-.banner-main .left-part .features .feature-item p {
-    margin: 0;
-    font-size: 26px;
-    font-weight: 400;
-    line-height: 30px;
-    color: #25319e;
-}
-
-.banner-main .right-part {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
-    height: 100%;
-    align-items: flex-start;
-    padding: 80px 40px;
-    gap: 10px;
-    background: #25319e;
-    border-radius: 0px 25px 25px 0px;
-}
-
-.banner-main .right-part .right-part-heading {
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 43px;
-    text-align: center;
-    letter-spacing: -0.02em;
-    color: #ffffff;
-    margin: 0;
-}
-
-.banner-main .right-part .price-selection-part {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 35px;
-    width: 100%;
-}
-
-.banner-main .right-part .price-selection-part .select2-container {
-    width: 100% !important;
-    /* padding: 15px 20px; */
-    border-radius: 15px;
-}
-
-.banner-main .right-part .price-selection-part .select2-container--default .select2-selection--single {
-    width: 100% !important;
-    padding: 15px 20px;
-    border-radius: 15px;
-    height: unset;
-}
-
-.banner-main .right-part .price-selection-part .select2-container--default .select2-selection--single .select2-selection__arrow {
-    height: auto;
-    position: absolute;
-    top: 50%;
-    right: 7%;
-    width: 35px;
-}
-
-.banner-main .right-part .price-selection-part .select2-container .select2-selection--single .select2-selection__rendered {
-    text-align: center;
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 30px;
-    color: #262626;
-}
-
-.banner-main .right-part .price-selection-part .select2-container--default .select2-selection--single .select2-selection__arrow b {
-    border-color: #262626 transparent transparent transparent;
-    border-width: 10px 7px 0 7px;
-}
-
-.banner-main .right-part .content .apply-btn {
-    width: 100%;
-    background-color: #d7fceb;
-    color: #262626;
-    padding: 15px 20px;
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 30px;
-    text-align: center;
-    color: #25319e;
-    margin-top: 10px;
-    cursor: pointer;
-}
-
-.banner-main .right-part .content .apply-btn:hover {
-    background-color: #25319E;
-    border: 1px solid #d7fceb;
-    color: #d7fceb;
-}
-
-.banner-main .right-part .content .ad-text {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    margin-top: 30px;
-}
-
-.banner-main .right-part .content .ad-text p {
-    text-align: center;
-    color: white;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 15px;
-    margin-bottom: 0;
-}
-
-.banner-main .right-part .content .ad-text p span {
-    margin-bottom: 0;
-    color: #afb6f4;
-}
-
-.main-block .banner-section .custom-container .loan-types-main {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    background-color: #f6f8fe;
-    border-radius: 25px;
-    padding: 50px;
-    margin-top: 40px;
-}
 
 /* loan card css */
+
+.loan-types-main .card-link{
+    text-decoration: none;
+}
+
+.loan-types-main .card-link:hover .loan-card{
+    box-shadow: rgba(37, 50, 165, 0.32) 3px 1px 17px;
+}
 
 .loan-types-main .loan-card {
     display: flex;
@@ -423,15 +161,12 @@ body {
 }
 
 .what-are-payday-section .content-div .heading-part {
-    display: flex;
-    flex: 1;
-    align-items: flex-start;
-    justify-content: flex-start;
     text-align: left;
     font-weight: 400;
     font-size: 56px;
     line-height: 110%;
     color: #25319e;
+    width: 80%;
 }
 
 .what-are-payday-section .content-div .text-part {
@@ -485,16 +220,24 @@ body {
     margin-top: 20px;
 }
 
-.howTo .content .first-part .text-part .exampleTxt {
+.howTo .content .first-part .text-part .box{
+    margin-top: 40px;
+    padding: 30px;
+    border-radius: 25px;
+    background: #F6F8FE;
+}
+
+.howTo .content .first-part .text-part .box .exampleTxt {
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
     line-height: 19px;
     color: #4E5BCA;
-    padding-top: 70px;
+    margin: 0;
+    padding: 0;
 }
 
-.howTo .content .first-part .text-part .exampleTxt span {
+.howTo .content .first-part .text-part .box .exampleTxt span {
     font-weight: 600;
 }
 
@@ -553,13 +296,11 @@ body {
 }
 
 .steps .content .step-list {
-    display: flex;
-    gap: 120px;
     margin-top: 40px;
 }
 
 .steps .content .step-list .list .step {
-    padding-top: 40px;
+    padding-top: 16px;
 }
 
 .steps .content .step-list .list .step .title {
@@ -690,7 +431,7 @@ body {
 .reason .content .top .head {
     color: #000;
     font-size: 42px;
-    line-height: 48px;
+    line-height: 120%;
     margin: 0;
     padding: 0;
 }
@@ -775,6 +516,8 @@ body {
 
 .loan-online-section .content .list {
     margin-top: 80px;
+    max-width: 80%;
+    margin: 80px auto 0;
 }
 
 .loan-online-section .content .list .box:first-child {
@@ -872,7 +615,6 @@ body {
 
 .pros-cons .content .cons {
     margin-top: 30px;
-    margin-bottom: 15px;
 }
 
 .pros-cons .content .cons .box .dis .title {
@@ -937,73 +679,250 @@ body {
     line-height: 22px;
 }
 
-/* footer section css */
 
-.footer-section {
-    background: #25319E;
-    padding-top: 30px;
-    padding-bottom: 60px;
+
+@media screen and (max-width:992px) {
+
+    
+
+    .loan-types-main .loan-card{
+        margin-bottom: 20px;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .payday-online-section .section-content .top-text-part p{
+        max-width: 100%;
+    }
+
+    .payday-online-section .section-content .top-text-part .heading{
+        font-size: 60px;
+        line-height: 60px;
+    }
+
+    .payday-online-section .section-content .bottom-provider-part .provider-images{
+        max-width: 100%;
+        width: 100%;
+        margin: unset;
+    }
+
+    .what-are-payday-section .content-div .heading-part{
+        font-size: 42px;
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .howTo .content .first-part .image-part,
+    .howTo .content .second-part .image-part{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .howTo .content .first-part .image-part img,
+    .howTo .content .second-part .image-part img{
+        width: 100% ;
+    }
+
+    .howTo .content .first-part .text-part,
+    .howTo .content .second-part .text-part{
+        max-width: 100%;
+    }
+
+    .steps .content .top .head{
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    .steps .content .top .head-text{
+        width: 100%;
+    }
+
+    .main-block .requirement-section .left-text-part{
+        padding-right: 0;
+        margin-bottom: 50px;
+    }
+    
+    .main-block .requirement-section .left-text-part h2{
+        width: 100%;
+    }
+
+    .loan-online-section .content .top .head{
+        width: 100%;
+    }
+    .loan-online-section .content .top .text{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 991px) {
+
+    
+    .howTo .content .second-part{
+        margin-top: 80px;
+    }
+
+    .reason .content .top .text{
+        width: 100%;
+    }
+
+    .pros-cons .content .top .head{
+        font-size: 36px;
+    }
+
+    .pros-cons .content .top .text{
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 0;
+    }
+
+    .pros-cons .content .pros{
+        margin-top: 50px
+    }
+
 }
 
-.footer-section .content .links-part {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px 0;
-    border-bottom: 1px solid #4E5BCA;
-}
+@media screen and (max-width: 580px) {
 
-.footer-section .content .links-part .link {
-    color: #F6F8FE;
-    font-size: 15px;
-    font-weight: 600;
-    line-height: 19px;
-    text-decoration: none;
-}
+    .payday-online-section .section-content .top-text-part .heading{
+        font-size: 36px;
+        line-height: 42px;
+    }
 
-.footer-section .content .copyright {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px;
-}
+    .payday-online-section .section-content .top-text-part p{
+        font-size: 15px;
+    }
 
-.footer-section .content .copyright .social-media a{
-    text-decoration: none;
-}
+    .payday-online-section .section-content .bottom-provider-part .provider-images{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
 
-.footer-section .content .copyright .text-part .text {
-    color: #AFB6F4;
-    font-size: 15px;
-    line-height: 19px;
-}
+    .what-are-payday-section .content-div .heading-part{
+        font-size: 36px;
+    }
 
-.footer-section .content .contact {
-    border-bottom: 1px solid #4E5BCA;
-    padding-bottom: 50px;
-    display: flex;
-    justify-content: flex-end;
-}
+    .what-are-payday-section .content-div .text-part{
+        font-size: 15px;
+    }
 
-.footer-section .content .contact .num {
-    color: #F6F8FE;
-    font-size: 17px;
-    font-weight: 300;
-    line-height: 19px;
-}
+    .howTo .content .text-part .head{
+        font-size: 26px;
+        line-height: 32px;
+    }
 
-.footer-section .content .text-part {
-    padding-top: 30px;
-}
+    .howTo .content .first-part .text-part ol li{
+        font-size: 15px;
+        line-height: 22px;
+    }
 
-.footer-section .content .text-part .box .title {
-    color: #FFF;
-    font-size: 12px;
-    line-height: 15px;
-}
+    .howTo .content .second-part .text-part .text{
+        font-size: 15px;
+        line-height: 19px;
+    }
 
-.footer-section .content .text-part .box .text {
-    color: var(--cobalt-blue-50, #AFB6F4);
-    font-size: 12px;
-    line-height: 15px;
+    .steps .content .top .head{
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    .steps .content .top .head-text{
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .steps .content .step-list .list .step .title{
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+    .steps .content .step-list .list .step .detail{
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .main-block .requirement-section .left-text-part h2{
+        font-size: 32px;
+    }
+
+    .main-block .requirement-section .left-text-part p{
+        font-size: 15px;
+    }
+
+    .requirement-section .right-card-part .steps-card .top-heading{
+        width: 100%;
+    }
+
+    .requirement-section .right-card-part .steps-card .bottom-content p{
+        font-size: 15px;
+    }
+
+    .reason .content .top .head{
+        font-size: 36px;
+    }
+
+    .reason .content .top .text{
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .reason .content .card-part .box{
+        flex-direction: row;
+    }
+
+    .reason .content .card-part .box .text-part .title{
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .reason .content .card-part .box .text-part .detail{
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .loan-online-section .content .top .head{
+        font-size: 36px;
+        line-height: 44px;
+    }
+
+    .loan-online-section .content .top .text{
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .loan-online-section .content .list .box{
+        padding: 40px 50px;
+    }
+
+    .loan-online-section .content .list .box .text-part{
+        margin-right: 0;
+    }
+
+    .pros-cons .content .top .head{
+        font-size: 26px;
+        line-height: 115%;
+    }
+
+    .pros-cons .content .top .text{
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .pros-cons .content .legend{
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .faq .content .top .head{
+        font-size: 26px;
+        line-height: 28px;
+    }
+
+    .faq .content .list .box .text-part .question{
+        font-size: 20px;
+        line-height: 22px;
+    }
+
+    .faq .content .list .box .text-part .answer{
+        font-size: 17px;
+        line-height: 22px;
+    }
+
 }
