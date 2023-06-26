@@ -1,0 +1,151 @@
+.main-block .loan-states{
+    padding-top: 135px;
+    padding-bottom: 120px;
+}
+
+.loan-states .content .title-part{
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.loan-states .content .title-part .title{
+    color: #000;
+    text-align: center;
+    font-size: 72px;
+    line-height: 105%;
+    margin: 0;
+    padding: 0;
+}
+
+.loan-states .content .title-part .text{
+    color: #474953;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 150%;
+    margin: 0;
+    padding: 0;
+}
+
+.state-part{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+    width: 96%;
+    margin: 50px auto 0;
+    justify-content: center;
+}
+
+.state-part .box{
+    border-radius: 15px;
+    background: #F2F2F2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.state-part .state{
+    text-decoration: none;
+    display: flex;
+    width: 15%;
+    height: 100px;
+}
+
+.state-part .state:hover .box{
+    background-color: #25319E;
+}
+
+.state-part .state:hover .box .name{
+    color: #F2F2F2;
+}
+
+.state-part .state .box .name{
+    color: #262626;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 150%;
+    margin: 0;
+    padding: 0;
+}
+.state-part.text-page{
+    width: 100%;
+}
+.state-part.text-page .state{
+    width: 23%;
+    color: #25319E;
+    background-color: #F6F8FE;
+    padding: 10px;
+    border-radius: 15px;
+    height: 70px;
+}
+.state-part.text-page .box{
+    background-color: transparent;
+    
+}
+.state-part.text-page .state .box .name{
+    color: #25319E;
+    white-space: nowrap;
+    font-size: 16px;
+}
+.state-part.text-page .state:hover .box{
+    background-color: transparent;
+}
+.state-part.text-page .state:hover{
+    background-color: #25319E;
+    color: #fff;
+}
+.state-part.text-page .state:hover .box .name{
+    color: #fff;
+}
+@media screen and (max-width:992px) {
+
+    .state-part{
+        width: 100%;
+    }
+
+    .state-part .state{
+        width: 18%;
+        height: 72px;
+    }
+    .state-part.text-page .state{
+        height: 60px;
+    }
+    .state-part.text-page .state .box .name{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    .state-part .state{
+        width: 23%;
+    }
+
+    .loan-states .content .title-part .title{
+        font-size: 46px;
+    }
+
+    .loan-states .content .title-part .text{
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width:576px) {
+
+    .state-part .state{
+        width: 48%;
+    }
+
+    .loan-states .content .title-part .title{
+        font-size: 36px;
+    }
+
+    .state-part .state .box .name{
+        font-size: 15px;
+    }
+}
