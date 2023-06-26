@@ -163,23 +163,23 @@
     line-height: 115%;
     letter-spacing: -0.56px;
 }
- ul li{
+.query-part  ul li{
     font-size: 20px;
     font-weight: 300;
     line-height: 150%;
     margin-top: 10px;
 }
-ol li{
+.query-part  ol li{
     margin-top: 10px;
 }
-a{
+.query-part a{
     color: #25319E;
     font-weight: 600;
 }
-ul li .bold{
+.query-part  ul li .bold{
     font-weight: 600;
 }
-ol li.dark{
+.query-part  ol li.dark{
     font-weight: 600;
     font-size: 20px;
 }

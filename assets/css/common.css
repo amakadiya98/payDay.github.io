@@ -119,12 +119,12 @@ body {
   line-height: 18px;
   color: white;
   border: 1px solid #25319e;
+  transition-duration: 0.5s;
 }
 
 .apply-btn:hover {
   background-color: white;
   color: #25319e;
-  transition-duration: 0.5s;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -272,7 +272,9 @@ body {
 .header-section .mobile-header.mobile-content .navbar-collapse.collapse.show {
   display: block;
 }
-
+.header-section .mobile-header.mobile-content .navbar-collapse.collapsing {
+  all: unset;
+}
 .mobile-content .wrapper-header-content {
   display: flex;
   align-items: center;
@@ -286,7 +288,7 @@ body {
   gap: 5px;
 }
 .mobile-content .wrapper-header-content .button-part .apply-btn {
-  padding: 15px 20px;
+  padding: 11px 20px;
   font-size: 15px;
   line-height: 120%;
 }
@@ -576,13 +578,13 @@ body {
   color: #25319e;
   margin-top: 10px;
   cursor: pointer;
+  transition-duration: 0.5s;
 }
 
 .banner-main .right-part .content .apply-btn:hover {
   background-color: #25319e;
   border: 1px solid #d7fceb;
   color: #d7fceb;
-  transition-duration: 0.5s;
 }
 
 .banner-main .right-part .content .ad-text {

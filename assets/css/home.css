@@ -22,7 +22,6 @@ body {
 }
 
 .loan-types-main .card-link:hover .loan-card{
-    transition-duration: 0.5s;
     box-shadow: rgba(37, 50, 165, 0.32) 3px 1px 17px;
 }
 
@@ -36,6 +35,7 @@ body {
     background: #ffffff;
     border: 1px solid #ffffff;
     border-radius: 20px;
+    transition-duration: 0.5s;
 }
 
 .loan-types-main .loan-card .description-part {
