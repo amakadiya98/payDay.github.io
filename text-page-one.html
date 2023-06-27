@@ -604,11 +604,10 @@
               </div>
             </div>
           </section>
-
         <section class="text-body">
             <div class="container">
                 <div class="content">
-                    <div class="row">
+                    <div class="row" data-bs-spy="scroll" data-bs-target="#navbar-example2" class="scrollspy-example">
                         <div class="col-lg-3 col-md-2 d-md-block d-none">
                             <div class="tabs-part">
                                 <div class="tab-head">
@@ -616,26 +615,36 @@
                                         Table of contents
                                     </h3>
                                 </div>
-                                <div class="tabs">
-                                    <a href="#" class="tab active">What are Instant Payday Loans?</a>
-
-                                    <a href="#quetion1" class="tab">Do Instant Payday Loans Really Exist?</a>
-
-                                    <a href="#quetion2" class="tab">Do Instant Approval Loans for Those With Bad Credit Even Exist?</a>
-
-                                    <a href="#question3" class="tab">How Do You Increase Your Chances of Getting a Payday Loan?</a>
-
-                                    <a href="#question4" class="tab">Pros And Cons Instant Payday Loans</a>
-
-                                    <a href="#question5" class="tab">How To Apply For Instant Payday Loans</a>
-
-                                    <a href="#question6" class="tab">FAQ</a>
-                                </div>
+                                <nav id="navbar-example2">
+                                  <ul class="nav nav-pills tabs">
+                                    <li class="nav-item">
+                                      <a href="#quetion" class="tab nav-link active">What are Instant Payday Loans?</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="#quetion1" class="tab nav-link">Do Instant Payday Loans Really Exist?</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="#quetion2" class=" tab nav-link">Do Instant Approval Loans for Those With Bad Credit Even Exist?</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="#question3" class="tab nav-link">How Do You Increase Your Chances of Getting a Payday Loan?</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="#question4" class="tab nav-link">Pros And Cons Instant Payday Loans</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="#question5" class="tab nav-link">How To Apply For Instant Payday Loans</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="#question6" class="tab nav-link">FAQ</a>
+                                    </li>
+                                  </ul>
+                                </nav>
                             </div>
                         </div>
-                        <div class="col-lg-9 col-md-10 col-sm-12">
+                        <div class="col-lg-9 col-md-10 col-sm-12" >
                             <div class="right-part">
-                                <div class="title-part">
+                                <div class="title-part" id="#quetion">
                                     <h2 class="title">
                                         Instant Payday Loans|Easy Guaranteed Approval 
                                     </h2>
@@ -668,24 +677,34 @@
                                             Table of contents
                                         </h3>
                                     </div>
-                                    <div class="tabs">
-                                        <a href="#" class="tab active">What are Instant Payday Loans?</a>
-    
-                                        <a href="#quetion1" class="tab">Do Instant Payday Loans Really Exist?</a>
-    
-                                        <a href="#quetion2" class="tab">Do Instant Approval Loans for Those With Bad Credit Even Exist?</a>
-    
-                                        <a href="#question3" class="tab">How Do You Increase Your Chances of Getting a Payday Loan?</a>
-    
-                                        <a href="#question4" class="tab">Pros And Cons Instant Payday Loans</a>
-    
-                                        <a href="#question5" class="tab">How To Apply For Instant Payday Loans</a>
-    
-                                        <a href="#question6" class="tab">FAQ</a>
-                                    </div>
+                                    <nav id="navbar-example2">
+                                      <ul class="nav nav-pills tabs">
+                                        <li class="nav-item">
+                                          <a href="#quetion" class="tab nav-link active">What are Instant Payday Loans?</a>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a href="#quetion1" class="tab nav-link active">Do Instant Payday Loans Really Exist?</a>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a href="#quetion2" class=" tab nav-link">Do Instant Approval Loans for Those With Bad Credit Even Exist?</a>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a href="#question3" class="tab nav-link">How Do You Increase Your Chances of Getting a Payday Loan?</a>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a href="#question4" class="tab nav-link">Pros And Cons Instant Payday Loans</a>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a href="#question5" class="tab nav-link">How To Apply For Instant Payday Loans</a>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a href="#question6" class="tab nav-link">FAQ</a>
+                                        </li>
+                                      </ul>
+                                    </nav>
                                 </div>
 
-                                <div class="query-part">
+                                <div class="query-part" >
                                     <div class="question-box" id="quetion1">
                                         <h2 class="question">Do Instant Payday Loans Really Exist?</h2>
 
@@ -1021,6 +1040,22 @@
           });
         });
       });
+    </script>
+    <script>
+      var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+        target: '#navbar-example2'
+    })
+    var firstScrollSpyEl = document.querySelector('[data-bs-spy="scroll"]')
+    firstScrollSpyEl.addEventListener('activate.bs.scrollspy', function () {
+      // do something...
+    })
+    var dataSpyList = [].slice.call(document.querySelectorAll('[data-bs-spy="scroll"]'))
+      dataSpyList.forEach(function (dataSpyEl) {
+        bootstrap.ScrollSpy.getInstance(dataSpyEl)
+          .refresh()
+    })
+    var scrollSpyContentEl = document.getElementById('content')
+    var scrollSpy = bootstrap.ScrollSpy.getInstance(scrollSpyContentEl) // Returns a Bootstrap scrollspy instance
     </script>
 
 </body>

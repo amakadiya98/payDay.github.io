@@ -605,7 +605,7 @@
               </div>
             </div>
           </section>
-        <section class="text-body">
+        <section class="text-body" data-bs-spy="scroll" data-bs-target="#navbar-example2" class="scrollspy-example" data-bs-offset="0" tabindex="0">
             <div class="container">
                 <div class="content">
                     <div class="row">
@@ -616,24 +616,34 @@
                                         Table of contents
                                     </h3>
                                 </div>
-                                <div class="tabs">
-                                    <a href="#" class="tab active">How do Payday Loans work?</a>
-
-                                    <a href="#quetion1" class="tab">How to Find the Best Payday Loans Near Me</a>
-
-                                    <a href="#quetion2" class="tab">How Much Can I Borrow With a Payday Loan?</a>
-
-                                    <a href="#question3" class="tab">Pros and Cons of Payday Loans</a>
-
-                                    <a href="#question4" class="tab">Requirements for Getting an Online Loan</a>
-
-                                    <a href="#question5" class="tab">Payday Loans Are An Option</a>
-
-                                    <a href="#question6" class="tab">Payday Loans Near You</a>
-                                </div>
+                                <nav id="navbar-example2">
+                                  <ul class="nav nav-pills tabs">
+                                    <li class="nav-item">
+                                      <a href="#quetion" class="tab nav-link active">How do Payday Loans work?</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="#quetion1" class="tab nav-link">How to Find the Best Payday Loans Near Me</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="#quetion2" class=" tab nav-link">How Much Can I Borrow With a Payday Loan?</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="#question3" class="tab nav-link">Pros and Cons of Payday Loans</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="#question4" class="tab nav-link">Requirements for Getting an Online Loan</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="#question5" class="tab nav-link">Payday Loans Are An Option</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="#question6" class="tab nav-link">Payday Loans Near You</a>
+                                    </li>
+                                  </ul>
+                                </nav>
                             </div>
                         </div>
-                        <div class="col-lg-9 col-md-10 col-sm-12">
+                        <div class="col-lg-9 col-md-10 col-sm-12" >
                             <div class="right-part">
                                 <div class="title-part">
                                     <h2 class="title">
@@ -1407,6 +1417,21 @@
         });
       });
     </script>
-
+<script>
+  var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+    target: '#navbar-example2'
+})
+var firstScrollSpyEl = document.querySelector('[data-bs-spy="scroll"]')
+firstScrollSpyEl.addEventListener('activate.bs.scrollspy', function () {
+  // do something...
+})
+var dataSpyList = [].slice.call(document.querySelectorAll('[data-bs-spy="scroll"]'))
+  dataSpyList.forEach(function (dataSpyEl) {
+    bootstrap.ScrollSpy.getInstance(dataSpyEl)
+      .refresh()
+})
+var scrollSpyContentEl = document.getElementById('content')
+var scrollSpy = bootstrap.ScrollSpy.getInstance(scrollSpyContentEl) // Returns a Bootstrap scrollspy instance
+</script>
 </body>
 </html>

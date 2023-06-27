@@ -32,6 +32,7 @@
     font-size: 15px;
     line-height: 120%;
     text-decoration: none;
+    position: relative;
 }
 
 .tabs-part .tabs .tab.active{
@@ -272,4 +273,31 @@ table tr:last-child td{
     .query-part .question-box .question.big, .query-part .pros-and-cons .top .title {
         font-size: 28px;
     }
+}
+
+/* .tabs-part .tabs .nav-item:first-child .tab::before{
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: var(--cobalt-blue-100, #25319E);
+    top: 6px;
+    left: -15px;
+}
+.tabs-part .tabs .nav-item:first-child .tab {
+    color: var(--cobalt-blue-100, #25319E);
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 130%;
+    position: relative;
+} */
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: transparent;
+}
+.nav-pills .nav-link{
+    padding: 0;
+}
+.text-body .content{
+    position: relative;
 }
