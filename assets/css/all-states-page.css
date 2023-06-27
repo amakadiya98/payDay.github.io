@@ -118,6 +118,9 @@
     .state-part.text-page .state .box .name{
         font-size: 14px;
     }
+    .main-block .loan-states{
+        padding: 100px 0;
+    }
 }
 
 @media screen and (max-width:768px) {
@@ -133,6 +136,9 @@
     .loan-states .content .title-part .text{
         font-size: 17px;
     }
+     .main-block .loan-states{
+        padding: 80px 0;
+    }
 }
 
 @media screen and (max-width:576px) {
@@ -147,5 +153,8 @@
 
     .state-part .state .box .name{
         font-size: 15px;
+    }
+     .main-block .loan-states{
+        padding: 60px 0;
     }
 }

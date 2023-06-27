@@ -117,7 +117,7 @@ body {
   font-weight: 400;
   font-size: 15px;
   line-height: 18px;
-  color: white;
+  color: #d7fceb;
   border: 1px solid #25319e;
   transition-duration: 0.5s;
 }
@@ -260,7 +260,7 @@ body {
 
 .header-section .mobile-header.mobile-content .navbar-collapse.collapse {
   position: absolute;
-  top: 0 !important;
+  top: -100px;
   left: 0 !important;
   width: 100vw;
   min-height: 85vh;
@@ -268,9 +268,31 @@ body {
   display: none;
   background: white;
   z-index: 9999;
+  animation: slideUp 1.5s forwards;
 }
 .header-section .mobile-header.mobile-content .navbar-collapse.collapse.show {
   display: block;
+  top: 0;
+  animation-name: slideDown;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideDown {
+  0% {
+    top: -100px;
+  }
+  100% {
+    top: 0;
+  }
+}
+@keyframes slideUp {
+  0% {
+    height: 100%;
+  }
+  100% {
+    height: 0;
+  }
 }
 .header-section .mobile-header.mobile-content .navbar-collapse.collapsing {
   all: unset;
@@ -279,7 +301,7 @@ body {
   display: flex;
   align-items: center;
   width: 100%;
-  padding: 10px 30px;
+  padding: 12px 40px;
   justify-content: space-between;
 }
 .mobile-content .wrapper-header-content .button-part {
@@ -626,7 +648,10 @@ body {
   padding-top: 30px;
   padding-bottom: 60px;
 }
-
+.footer-section .content {
+  max-width: 1100px;
+  margin: 0 auto;
+}
 .footer-section .content .links-part {
   display: flex;
   align-items: center;
@@ -634,7 +659,14 @@ body {
   padding: 15px 0;
   border-bottom: 1px solid #4e5bca;
 }
-
+.footer-section .content .links-part .left-part,
+.footer-section .content .links-part .right-part {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  justify-content: space-between;
+  gap: 10px;
+}
 .footer-section .content .links-part .link {
   color: #f6f8fe;
   font-size: 15px;
@@ -683,6 +715,7 @@ body {
   font-size: 17px;
   font-weight: 300;
   line-height: 19px;
+  text-decoration: none;
 }
 
 .footer-section .content .text-part {
@@ -763,8 +796,17 @@ body {
   .banner-section .banner-main {
     grid-template-columns: 66% 34%;
   }
+  .main-block .banner-section .custom-container .loan-types-main {
+    padding: 40px 30px;
+  }
 }
 
+@media screen and (max-width: 1199px) {
+  .footer-section .content {
+    max-width: 100%;
+    width: 100%;
+  }
+}
 @media screen and (max-width: 992px) {
   .banner-section .banner-main {
     grid-template-columns: 66% 34%;
@@ -813,6 +855,7 @@ body {
   .footer-section .content .contact .text {
     display: none;
   }
+ 
 }
 
 @media screen and (max-width: 767px) {
@@ -829,13 +872,20 @@ body {
     display: block;
     width: 25%;
   }
+  .footer-section .content .links-part{
+    padding:20px 10px;
+    flex-direction: column;
+    gap: 15px;
+  }
 }
 
 @media screen and (max-width: 580px) {
   .header-section .custom-container .left-part .link-item-part {
     display: none;
   }
-
+  .banner-main .left-part .heading-text {
+    display: none;
+  }
   .banner-section .banner-main {
     grid-template-columns: 0% 100%;
   }
@@ -843,10 +893,39 @@ body {
   .banner-main .right-part {
     border-radius: 25px;
   }
-
+  .loan-types-main .loan-card .description-part p {
+    font-size: 15px;
+  }
   .main-block .banner-section .custom-container .loan-types-main {
     justify-content: center;
-    padding: 20px;
+    padding: 20px 10px;
+    gap: 10px;
+  }
+  .footer-section .content .links-part {
+    padding: 10px 0px;
+    gap: 15px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .footer-section .content .links-part .left-part, .footer-section .content .links-part .right-part{
+    flex-direction: column;
+  }
+  .footer-section .content .links-part{
+    flex-direction: row;
+    height: 100%;
+  }
+  .footer-section .content .links-part .left-part{
+    align-items: flex-start;
+    text-align: left;
+  }
+  .footer-section .content .links-part .right-part{
+    align-items: flex-end;
+    text-align: right;
+  }
+  .footer-section .content .links-part .left-part,
+  .footer-section .content .link-part .rihgt-part {
+    justify-content: flex-start;
+    height: 100%;
   }
 }
 
@@ -858,12 +937,18 @@ body {
     padding: 8px 16px;
     font-size: 12px;
   }
-  .header-section .custom-container .right-part{
+  .header-section .custom-container .right-part {
     flex: 2;
     gap: 10px;
   }
-  .navbar-light .navbar-toggler-icon{
+  .navbar-light .navbar-toggler-icon {
     width: 20px;
     height: 20px;
+  }
+  .banner-main .right-part {
+    padding: 20px 10px;
+  }
+  .footer-section{
+    padding-bottom: 25px;
   }
 }
