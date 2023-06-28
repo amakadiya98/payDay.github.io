@@ -22,10 +22,11 @@
 .team-section .content .profile-part .grid {
     display: grid;
 }
-
+.team-section .content .profile-part .grid .profile .box, .team-section .content .profile-part .grid .profile .box .img-part img{
+    transition-duration: 0.5s;
+}
 .team-section .content .profile-part .grid .profile .box:hover .img-part img{
     transform: scale(1.09);
-    transition-duration: 0.5s;
 }
 
 .team-section .content .profile-part .profile {
@@ -60,14 +61,14 @@
     margin-top: 25px;
 }
 
-.team-section .content .profile-part .profile .link-part .link {
+.team-section .content .profile-part .profile .link-part .link, .team-section .content .profile-part .profile .link-part .link img {
     text-decoration: none;
     margin-right: 10px;
+    transition-duration: 0.5s;
 }
 
 .team-section .content .profile-part .profile .link-part .link:hover img{
     transform: scale(1.5);
-    transition-duration: 0.5s;
 }
 
 @media screen and (max-width:992px) {
